@@ -1,0 +1,25 @@
+<mat-drawer-container *ngIf='rx' class="rx-card">
+    <button mat-button-raised (click)="drawer.toggle()">
+        <h3 aria-level="3">{{rx.name}}</h3>
+    </button>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <mat-drawer-content>
+            <h3 aria-level=3>Details!</h3>
+        </mat-drawer-content>
+        <mat-form-field class="card-section" id="last-fill">
+            <mat-label>Choose a date</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for='rx-interval'>Refill Every:</mat-label>
+            <mat-select id="rx-interval" formControlName="rx-interval">
+                <mat-option>30 days</mat-option>
+                <mat-option>90 days</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-drawer>
+</mat-drawer-container>
+<mat-divider />

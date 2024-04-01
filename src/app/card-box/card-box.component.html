@@ -1,0 +1,74 @@
+<div>
+    <h2>Examples of Work</h2>
+    <mat-accordion class="accordion">
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false" class="expCard">
+        <mat-expansion-panel-header>
+          <mat-panel-title aria-level="3" class="panelTitle">
+            Accessibility Conformance Reports
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li aria-labelledby="acr1">
+            Example Game ACR
+            <a id="acr1" href="https://github.com/1handcoding/Game-ACR-Example/blob/main/Game%20Accessibility%20Guidelines_%20Elder%20Scrolls%20Online%20(draft)%20completed%20by%20S.%20K.%20McKenzie%20-%20Google%20Sheets.pdf">
+              View on GitHub 
+            </a>
+          </li>
+          <li aria-labelledby="acr2">
+            Example Web ACR
+            <a id="acr2" href="https://github.com/1handcoding/Web-ACR-Example/blob/main/Example%20Accessibility%20Conformance%20Report%20-%20Google%20Docs.pdf">
+              View on GitHub
+            </a>
+          </li>
+        </ul>
+      </mat-expansion-panel>
+      <mat-expansion-panel (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false" class="expCard">
+        <mat-expansion-panel-header>
+          <mat-panel-title aria-level="3" class="panelTitle">
+            Public Coding Projects
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <ul>
+          <li aria-labelledby="ppj1">
+            Vue Accessible Experiment Page
+            <a id="pp1" href="https://theswankyninja.github.io/skmckenzie/">
+              View on GitHub 
+            </a>
+          </li>
+
+        </ul>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <!--<mat-drawer-container class="card">
+        <button mat-button-raised (click)="drawer.toggle()">
+            <h3 aria-level="3">vyfkyu</h3>
+        </button>
+
+        <mat-drawer #drawer class="example-sidenav" mode="side">
+            <p>drawer works!</p>
+            <mat-drawer-content>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                      <div mat-card-avatar class="example-header-image"></div>
+                      <mat-card-title>Shiba Inu</mat-card-title>
+                      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                    </mat-card-header>
+                    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                    <mat-card-content>
+                      <p>
+                        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                        bred for hunting.
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                      <button mat-button>LIKE</button>
+                      <button mat-button>SHARE</button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-drawer-content>
+        </mat-drawer>
+    </mat-drawer-container>-->
+</div>

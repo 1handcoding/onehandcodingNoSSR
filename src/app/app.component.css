@@ -1,0 +1,22 @@
+.main {
+    display: flow;
+}
+
+.content {
+    min-width: 95%;
+    border-radius: 1rem;
+    border-color: #660330;
+    padding: 1rem;
+    font-weight: 600;
+    margin: 1.5rem 0;
+    align-self: flex-start;
+    }
+
+h1 {
+    margin: 0 auto;
+}
+
+.panelTitle {
+    color: whitesmoke;
+    background-color: #660330;
+}
